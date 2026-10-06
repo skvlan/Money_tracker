@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}Delete expense · MoneyMate{% endblock %}
+{% block content %}
+<section class="form-page"><div class="form-card"><p class="eyebrow">CONFIRMATION</p><h1>Delete this expense?</h1><p class="muted">{{ expense.description }} · €{{ expense.amount|floatformat:2 }} · {{ expense.date|date:"j M Y" }}</p><form method="post" class="app-form">{% csrf_token %}<button class="button button-danger full-button" type="submit">Delete expense</button><a class="button button-secondary full-button" href="{% url 'expense_list' %}">Cancel</a></form></div></section>
+{% endblock %}

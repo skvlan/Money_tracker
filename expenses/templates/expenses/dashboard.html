@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load l10n %}
+{% block title %}Overview · MoneyMate{% endblock %}
+{% block content %}
+<section class="welcome-row">
+  <div><p class="eyebrow">PERSONAL FINANCE</p><h1>Hi, {{ user.username }} 👋</h1><p class="muted">A clear view of where your money goes.</p></div>
+  <a class="button button-primary" href="{% url 'expense_create' %}"><span aria-hidden="true">＋</span> Add expense</a>
+</section>
+
+<div class="period-line"><h2>{{ today|date:"F Y"|capfirst }}</h2><span class="period-note">This month</span></div>
+
+<section class="summary-grid" aria-label="Monthly and yearly summary">
+  <article class="summary-card income-card"><div class="card-label">Monthly income</div><div class="card-value">€{{ income|floatformat:2 }}</div><a class="card-action" href="{% url 'income_update' %}">{% if income %}Edit income{% else %}Set your income{% endif %} <span aria-hidden="true">↗</span></a></article>
+  <article class="summary-card"><div class="card-label">Spent this month</div><div class="card-value">€{{ spent_month|floatformat:2 }}</div><div class="card-caption">{{ month_expense_count }} {% if month_expense_count == 1 %}expense{% else %}expenses{% endif %}</div></article>
+  <article class="summary-card remaining-card"><div class="card-label">Remaining</div><div class="card-value">€{{ remaining|floatformat:2 }}</div><div class="card-caption">Income minus expenses</div></article>
+  <article class="summary-card year-card"><div class="card-label">Spent in {{ today|date:"Y" }}</div><div class="card-value">€{{ spent_year|floatformat:2 }}</div><div class="card-caption">Year to date</div></article>
+</section>
+
+<section class="content-grid">
+  <article class="panel category-panel">
+    <div class="panel-heading"><div><p class="eyebrow">SPENDING BREAKDOWN</p><h2>By category</h2></div><a class="subtle-link" href="{% url 'category_create' %}">＋ Add category</a></div>
+    {% if category_totals %}
+      <div class="category-list">
+        {% for category in category_totals %}
+          <div class="category-row">
+            <div class="category-top"><span class="category-name"><span class="category-emoji">{{ category.emoji }}</span>{{ category.name }}</span><span class="category-amount">€{{ category.spent|floatformat:2 }}</span></div>
+            <div class="progress-track"><span class="progress-fill" style="width: {{ category.share|floatformat:0 }}%"></span></div>
+            <div class="category-share">{{ category.share|floatformat:0 }}% of monthly spending</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}<p class="empty-state">Add your first expense to see a breakdown here.</p>{% endif %}
+  </article>
+
+  <article class="panel recent-panel">
+    <div class="panel-heading"><div><p class="eyebrow">LATEST ACTIVITY</p><h2>Recent expenses</h2></div><a class="subtle-link" href="{% url 'expense_list' %}">All expenses →</a></div>
+    {% if recent_expenses %}
+      <div class="expense-list">
+        {% for expense in recent_expenses %}
+          <div class="expense-row"><span class="expense-icon">{{ expense.category.emoji }}</span><div class="expense-info"><strong>{{ expense.description }}</strong><span>{{ expense.category.name }} · {{ expense.date|date:"j M" }}</span></div><strong class="expense-amount">−€{{ expense.amount|floatformat:2 }}</strong></div>
+        {% endfor %}
+      </div>
+    {% else %}<div class="empty-state">No expenses yet.<br>Add your first purchase.</div>{% endif %}
+    <a class="button button-secondary full-button" href="{% url 'expense_create' %}">Add expense</a>
+  </article>
+</section>
+{% endblock %}

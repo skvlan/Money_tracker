@@ -1,0 +1,36 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f4">
+  <title>{% block title %}Money Tracker{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'expenses/styles.css' %}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="{% if user.is_authenticated %}{% url 'dashboard' %}{% else %}{% url 'login' %}{% endif %}">
+      <span class="brand-mark">M</span><span>money<span class="brand-light">mate</span></span>
+    </a>
+    {% if user.is_authenticated %}
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="{% url 'dashboard' %}">Overview</a>
+        <a href="{% url 'expense_list' %}">Expenses</a>
+      </nav>
+      <div class="account-actions">
+        <span class="welcome">{{ user.username }}</span>
+        <form action="{% url 'logout' %}" method="post">{% csrf_token %}<button class="text-button" type="submit">Log out</button></form>
+      </div>
+    {% endif %}
+  </header>
+
+  <main class="page-shell">
+    {% if messages %}
+      <div class="messages">{% for message in messages %}<p class="message {{ message.tags }}">{{ message }}</p>{% endfor %}</div>
+    {% endif %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">Your money, with a clearer picture.</footer>
+</body>
+</html>
