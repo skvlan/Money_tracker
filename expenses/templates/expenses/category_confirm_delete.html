@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Delete category" %} · MoneyMate{% endblock %}
+{% block content %}
+<section class="form-page">
+  <a class="back-link" href="{% url 'category_list' %}">← {% trans "Back to categories" %}</a>
+  <div class="form-card">
+    <p class="eyebrow">{% trans "CONFIRMATION" %}</p>
+    <h1>{% blocktrans with emoji=category.emoji name=category.name %}Delete {{ emoji }} {{ name }}?{% endblocktrans %}</h1>
+    {% if expense_count %}
+      {% if form.fields.replacement.queryset.exists %}
+        <p class="muted">{% trans "Expenses in this category:" %} {{ expense_count }}. {% trans "Choose another category to keep them in your history." %}</p>
+        <form method="post" class="app-form">{% csrf_token %}
+          <div class="field"><label for="{{ form.replacement.id_for_label }}">{{ form.replacement.label }}</label>{{ form.replacement }}{% for error in form.replacement.errors %}<span class="field-error">{{ error }}</span>{% endfor %}</div>
+          <button class="button button-danger full-button" type="submit">{% trans "Move expenses and delete category" %}</button>
+          <a class="button button-secondary full-button" href="{% url 'category_list' %}">{% trans "Cancel" %}</a>
+        </form>
+      {% else %}
+        <p class="muted">{% trans "Expenses in this category:" %} {{ expense_count }}. {% trans "Add another category first so these expenses can be kept." %}</p>
+        <a class="button button-primary full-button" href="{% url 'category_create' %}">{% trans "Add a category" %}</a>
+      {% endif %}
+    {% else %}
+      <p class="muted">{% trans "This category has no expenses and can be safely removed." %}</p>
+      <form method="post" class="app-form">{% csrf_token %}
+        <button class="button button-danger full-button" type="submit">{% trans "Delete category" %}</button>
+        <a class="button button-secondary full-button" href="{% url 'category_list' %}">{% trans "Cancel" %}</a>
+      </form>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Categories" %} · MoneyMate{% endblock %}
+{% block content %}
+<section class="welcome-row"><div><p class="eyebrow">{% trans "YOUR SETUP" %}</p><h1>{% trans "Categories" %}</h1><p class="muted">{% trans "Organize expenses with names and icons that work for you." %}</p></div><a class="button button-primary" href="{% url 'category_create' %}">＋ {% trans "Add category" %}</a></section>
+<section class="panel category-management">
+  {% if categories %}
+    <div class="managed-category-list">
+      {% for category in categories %}
+        <div class="managed-category-row">
+          <span class="category-emoji">{{ category.emoji }}</span>
+          <div class="managed-category-info"><strong>{{ category.name }}</strong><span>{% trans "Expenses:" %} {{ category.expense_count }}</span></div>
+          <div class="table-actions"><a class="edit-link" href="{% url 'category_update' category.pk %}">{% trans "Edit" %}</a><a class="delete-link" href="{% url 'category_delete' category.pk %}">{% trans "Delete" %}</a></div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}<div class="empty-state">{% trans "No categories yet. Add one to start organizing expenses." %}</div>{% endif %}
+</section>
+{% endblock %}

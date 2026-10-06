@@ -2,4 +2,10 @@
 name = "money-tracker"
 version = "0.1.0"
 requires-python = ">=3.12"
-dependencies = ["django>=6.1,<6.2"]
+dependencies = [
+    "django>=6.1,<6.2",
+    "psycopg[binary]>=3.2,<4",
+    "dj-database-url>=2.3,<3",
+    "gunicorn>=23,<24",
+    "whitenoise>=6.9,<7",
+]

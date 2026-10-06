@@ -1,0 +1,10 @@
+.git
+.idea
+.venv
+__pycache__
+*.py[cod]
+*.sqlite3
+*.sqlite3.backup
+local-data.json
+.env
+.DS_Store

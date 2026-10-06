@@ -1,0 +1,632 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\nLanguage: uk\nPlural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Create a savings goal"
+msgstr "Створити ціль заощаджень"
+
+msgid "same as this time last month"
+msgstr "стільки ж, як за цей період минулого місяця"
+
+msgid "SPENDING BREAKDOWN"
+msgstr "ВИТРАТИ ЗА КАТЕГОРІЯМИ"
+
+msgid "Category deleted. Its expenses were kept in the replacement category."
+msgstr "Категорію видалено. Витрати збережено в обраній категорії."
+
+msgid "Cancel"
+msgstr "Скасувати"
+
+msgid "Spending trend"
+msgstr "Динаміка витрат"
+
+msgid "See how your spending changes through the year."
+msgstr "Подивіться, як змінюються витрати протягом року."
+
+msgid "This category has no expenses and can be safely removed."
+msgstr "У цій категорії немає витрат, її можна безпечно видалити."
+
+msgid "Add expenses to see your category breakdown."
+msgstr "Додайте витрати, щоб побачити розподіл за категоріями."
+
+msgid "Dec"
+msgstr "Гру"
+
+msgid "December"
+msgstr "Грудень"
+
+msgid "Savings goals"
+msgstr "Цілі заощаджень"
+
+msgid "Your expenses are private to your account."
+msgstr "Ваші витрати доступні лише у вашому обліковому записі."
+
+msgid "Target amount (%(currency)s)"
+msgstr "Цільова сума (%(currency)s)"
+
+msgid "left"
+msgstr "залишилося"
+
+msgid "Overview"
+msgstr "Огляд"
+
+msgid "ACCOUNT PREFERENCE"
+msgstr "НАЛАШТУВАННЯ ОБЛІКОВОГО ЗАПИСУ"
+
+msgid "PLAN AHEAD"
+msgstr "ПЛАНУЙТЕ ЗАЗДАЛЕГІДЬ"
+
+msgid "Expense updated."
+msgstr "Витрату оновлено."
+
+msgid "Delete"
+msgstr "Видалити"
+
+msgid "This amount will be set aside from your free monthly balance."
+msgstr "Цю суму буде віднято від вільного залишку за місяць."
+
+msgid "LATEST ACTIVITY"
+msgstr "ОСТАННІ ОПЕРАЦІЇ"
+
+msgid "Spent this month"
+msgstr "Витрачено цього місяця"
+
+msgid "Goal progress"
+msgstr "Прогрес цілі"
+
+msgid "This month’s contributions:"
+msgstr "Відкладено цього місяця:"
+
+msgid "Manage"
+msgstr "Керувати"
+
+msgid "Spent in"
+msgstr "Витрачено за"
+
+msgid "of yearly spending"
+msgstr "від витрат за рік"
+
+msgid "March"
+msgstr "Березень"
+
+msgid "Your money, with a clearer picture."
+msgstr "Ваші фінанси — зрозуміліше."
+
+msgid "Nov"
+msgstr "Лис"
+
+msgid "Save income"
+msgstr "Зберегти дохід"
+
+msgid "Choose a replacement category"
+msgstr "Оберіть категорію для перенесення"
+
+msgid "August"
+msgstr "Серпень"
+
+msgid "Yesterday"
+msgstr "Учора"
+
+msgid "Mar"
+msgstr "Бер"
+
+msgid "Back to categories"
+msgstr "Назад до категорій"
+
+msgid "Set aside for goals"
+msgstr "Відкладено на цілі"
+
+msgid "Months with expenses:"
+msgstr "Місяців із витратами:"
+
+msgid "Save changes"
+msgstr "Зберегти зміни"
+
+msgid "Create an account"
+msgstr "Створити обліковий запис"
+
+msgid "Yearly overview"
+msgstr "Огляд за рік"
+
+msgid "This amount will return to your free monthly balance."
+msgstr "Ця сума повернеться до вільного залишку за місяць."
+
+msgid "Create goal"
+msgstr "Створити ціль"
+
+msgid "Today"
+msgstr "Сьогодні"
+
+msgid "What did you buy?"
+msgstr "Що ви придбали?"
+
+msgid "Email address"
+msgstr "Електронна пошта"
+
+msgid "Set the amount to calculate what remains after your expenses."
+msgstr "Вкажіть суму доходу, щоб розрахувати залишок після витрат."
+
+msgid "Goal contributions are not expenses, but they are deducted from your free monthly balance."
+msgstr "Внески до цілей — це не витрати, але вони віднімаються від вільного залишку за місяць."
+
+msgid "Add an expense"
+msgstr "Додати витрату"
+
+msgid "Category deleted."
+msgstr "Категорію видалено."
+
+msgid "Monthly income (%(currency)s)"
+msgstr "Дохід за місяць (%(currency)s)"
+
+msgid "Changing currency does not convert amounts already entered. It only changes how amounts are labelled. Use one currency consistently for an account."
+msgstr "Зміна валюти не перераховує вже введені суми, а лише змінює їхнє позначення. Використовуйте в обліковому записі одну валюту."
+
+msgid "Expenses in this category:"
+msgstr "Витрат у цій категорії:"
+
+msgid "of spending so far"
+msgstr "від витрат на цей момент"
+
+msgid "Add a category"
+msgstr "Додати категорію"
+
+msgid "less than this time last month"
+msgstr "менше, ніж за цей період минулого місяця"
+
+msgid "Goal savings deducted:"
+msgstr "Відкладено на цілі:"
+
+msgid "Create your account"
+msgstr "Створіть обліковий запис"
+
+msgid "Add your first expense to see a breakdown here."
+msgstr "Додайте першу витрату, щоб побачити тут розподіл."
+
+msgid "Choose something to save for and set your target amount."
+msgstr "Оберіть, на що заощаджуєте, і вкажіть цільову суму."
+
+msgid "Euro (EUR)"
+msgstr "Євро (EUR)"
+
+msgid "Main navigation"
+msgstr "Головна навігація"
+
+msgid "Choose another category to keep them in your history."
+msgstr "Оберіть іншу категорію, щоб зберегти їх в історії."
+
+msgid "Goal reached"
+msgstr "Ціль досягнуто"
+
+msgid "Set a target and track your progress as you add savings."
+msgstr "Визначте ціль і відстежуйте прогрес, додаючи заощадження."
+
+msgid "YOUR FINANCES, IN ONE PLACE"
+msgstr "ВАШІ ФІНАНСИ В ОДНОМУ МІСЦІ"
+
+msgid "May"
+msgstr "Травень"
+
+msgid "Name"
+msgstr "Назва"
+
+msgid "Edit savings goal"
+msgstr "Редагувати ціль заощаджень"
+
+msgid "Amount"
+msgstr "Сума"
+
+msgid "more than this time last month"
+msgstr "більше, ніж за цей період минулого місяця"
+
+msgid "today"
+msgstr "сьогодні"
+
+msgid "Purchase date"
+msgstr "Дата покупки"
+
+msgid "Average per active month"
+msgstr "У середньому за місяць із витратами"
+
+msgid "No expenses yet."
+msgstr "Витрат поки немає."
+
+msgid "First,"
+msgstr "Спочатку"
+
+msgid "No spending at this time last month"
+msgstr "У цей час минулого місяця витрат не було"
+
+msgid "Total spent in"
+msgstr "Усього витрачено за"
+
+msgid "Category updated."
+msgstr "Категорію оновлено."
+
+msgid "Monthly income"
+msgstr "Дохід за місяць"
+
+msgid "new this month"
+msgstr "нове цього місяця"
+
+msgid "Delete “%(name)s”?"
+msgstr "Видалити «%(name)s»?"
+
+msgid "Australian dollar (AUD)"
+msgstr "Австралійський долар (AUD)"
+
+msgid "Add another category first so these expenses can be kept."
+msgstr "Спочатку додайте іншу категорію, щоб зберегти ці витрати."
+
+msgid "Reports"
+msgstr "Звіти"
+
+msgid "MONTH BY MONTH"
+msgstr "ЗА МІСЯЦЯМИ"
+
+msgid "MAKE IT YOURS"
+msgstr "НАЛАШТУЙТЕ ПІД СЕБЕ"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "November"
+msgstr "Листопад"
+
+msgid "June"
+msgstr "Червень"
+
+msgid "Add savings to %(goal)s"
+msgstr "Поповнити ціль «%(goal)s»"
+
+msgid "Feb"
+msgstr "Лют"
+
+msgid "Free this month"
+msgstr "Вільно цього місяця"
+
+msgid "Confirm password"
+msgstr "Підтвердьте пароль"
+
+msgid "Category"
+msgstr "Категорія"
+
+msgid "Delete category"
+msgstr "Видалити категорію"
+
+msgid "Settings saved."
+msgstr "Налаштування збережено."
+
+msgid "Add"
+msgstr "Додати"
+
+msgid "optional"
+msgstr "необов’язково"
+
+msgid "Create account"
+msgstr "Створити обліковий запис"
+
+msgid "Expenses"
+msgstr "Витрати"
+
+msgid "Across all categories"
+msgstr "За всіма категоріями"
+
+msgid "Yearly report"
+msgstr "Річний звіт"
+
+msgid "Canadian dollar (CAD)"
+msgstr "Канадський долар (CAD)"
+
+msgid "Recorded savings:"
+msgstr "Усього відкладено:"
+
+msgid "Purchase"
+msgstr "Покупка"
+
+msgid "Delete goal and contributions"
+msgstr "Видалити ціль і внески"
+
+msgid "Log out"
+msgstr "Вийти"
+
+msgid "No expenses recorded in %(year)s yet."
+msgstr "За %(year)s рік витрат поки немає."
+
+msgid "No categories yet. Add one to start organizing expenses."
+msgstr "Категорій поки немає. Додайте одну, щоб упорядкувати витрати."
+
+msgid "Log in to see your expenses."
+msgstr "Увійдіть, щоб переглянути витрати."
+
+msgid "Jan"
+msgstr "Січ"
+
+msgid "Back to reports"
+msgstr "Назад до звітів"
+
+msgid "Delete expense"
+msgstr "Видалити витрату"
+
+msgid "Recent expenses"
+msgstr "Останні витрати"
+
+msgid "Already have an account?"
+msgstr "Вже маєте обліковий запис?"
+
+msgid "YOUR SPENDING, ZOOMED OUT"
+msgstr "ЗАГАЛЬНА КАРТИНА ВИТРАТ"
+
+msgid "Indian rupee (INR)"
+msgstr "Індійська рупія (INR)"
+
+msgid "A clear view of where your money goes."
+msgstr "Зрозуміло про те, куди йдуть гроші."
+
+msgid "Savings added to %(goal)s."
+msgstr "Додано до цілі «%(goal)s»."
+
+msgid "Same as this time last month"
+msgstr "Стільки ж, як за цей період минулого місяця"
+
+msgid "Add a goal"
+msgstr "Додати ціль"
+
+msgid "of"
+msgstr "із"
+
+msgid "September"
+msgstr "Вересень"
+
+msgid "Preferred currency"
+msgstr "Бажана валюта"
+
+msgid "FULL YEAR"
+msgstr "ЗА РІК"
+
+msgid "April"
+msgstr "Квітень"
+
+msgid "Income minus expenses and goal savings"
+msgstr "Дохід мінус витрати та заощадження на цілі"
+
+msgid "Add the amount, a short description, and a category."
+msgstr "Вкажіть суму, короткий опис і категорію."
+
+msgid "HISTORY"
+msgstr "ІСТОРІЯ"
+
+msgid "Language"
+msgstr "Мова"
+
+msgid "Welcome back"
+msgstr "З поверненням"
+
+msgid "Edit expense"
+msgstr "Редагувати витрату"
+
+msgid "Hi, %(username)s 👋"
+msgstr "Привіт, %(username)s 👋"
+
+msgid "Choose a name and icon that make sense to you."
+msgstr "Оберіть назву й піктограму, які вам підходять."
+
+msgid "Target amount"
+msgstr "Цільова сума"
+
+msgid "Amount to add (%(currency)s)"
+msgstr "Сума внеску (%(currency)s)"
+
+msgid "CONFIRMATION"
+msgstr "ПІДТВЕРДЖЕННЯ"
+
+msgid "Save category"
+msgstr "Зберегти категорію"
+
+msgid "Monthly income saved."
+msgstr "Дохід за місяць збережено."
+
+msgid "Your purchases, newest first."
+msgstr "Покупки — спочатку найновіші."
+
+msgid "January"
+msgstr "Січень"
+
+msgid "Current month"
+msgstr "Поточний місяць"
+
+msgid "PERSONAL FINANCE"
+msgstr "ОСОБИСТІ ФІНАНСИ"
+
+msgid "Move its expenses to"
+msgstr "Перенести її витрати до"
+
+msgid "Sep"
+msgstr "Вер"
+
+msgid "Add savings"
+msgstr "Додати заощадження"
+
+msgid "New here?"
+msgstr "Вперше тут?"
+
+msgid "START WITH THE BASICS"
+msgstr "ПОЧНІТЬ З ОСНОВ"
+
+msgid "Delete this expense?"
+msgstr "Видалить цю витрату?"
+
+msgid "Apr"
+msgstr "Кві"
+
+msgid "All expenses"
+msgstr "Усі витрати"
+
+msgid "Set your income"
+msgstr "Вкажіть дохід"
+
+msgid "Icon"
+msgstr "Піктограма"
+
+msgid "Aug"
+msgstr "Сер"
+
+msgid "Update the goal name or target. Recorded contributions will stay unchanged."
+msgstr "Змініть назву або цільову суму. Записані внески залишаться без змін."
+
+msgid "Category added."
+msgstr "Категорію додано."
+
+msgid "Log in"
+msgstr "Увійти"
+
+msgid "Savings goal created."
+msgstr "Ціль заощаджень створено."
+
+msgid "Organize expenses with names and icons that work for you."
+msgstr "Упорядковуйте витрати за допомогою зручних назв і піктограм."
+
+msgid "All expenses →"
+msgstr "Усі витрати →"
+
+msgid "No expenses yet. Add your first purchase."
+msgstr "Витрат поки немає. Додайте першу покупку."
+
+msgid "February"
+msgstr "Лютий"
+
+msgid "We couldn't log you in. Check your username and password."
+msgstr "Не вдалося увійти. Перевірте ім’я користувача та пароль."
+
+msgid "Year"
+msgstr "Рік"
+
+msgid "Add expense"
+msgstr "Додати витрату"
+
+msgid "US dollar (USD)"
+msgstr "Долар США (USD)"
+
+msgid "Year to date · View report"
+msgstr "Від початку року · Переглянути звіт"
+
+msgid "New category"
+msgstr "Нова категорія"
+
+msgid "Goal name"
+msgstr "Назва цілі"
+
+msgid "Expenses:"
+msgstr "Витрати:"
+
+msgid "Username"
+msgstr "Ім’я користувача"
+
+msgid "TRACK A PURCHASE"
+msgstr "ДОДАЙТЕ ПОКУПКУ"
+
+msgid "Save settings"
+msgstr "Зберегти налаштування"
+
+msgid "no spending"
+msgstr "витрат немає"
+
+msgid "Savings goal and its recorded contributions were deleted."
+msgstr "Ціль і її внески видалено."
+
+msgid "Settings"
+msgstr "Налаштування"
+
+msgid "Oct"
+msgstr "Жов"
+
+msgid "Add your first purchase."
+msgstr "Додайте першу покупку."
+
+msgid "Categories"
+msgstr "Категорії"
+
+msgid "July"
+msgstr "Липень"
+
+msgid "Expense added."
+msgstr "Витрату додано."
+
+msgid "Back to overview"
+msgstr "Назад до огляду"
+
+msgid "Choose your preferred currency and language."
+msgstr "Оберіть валюту та мову інтерфейсу."
+
+msgid "Japanese yen (JPY)"
+msgstr "Японська єна (JPY)"
+
+msgid "Swiss franc (CHF)"
+msgstr "Швейцарський франк (CHF)"
+
+msgid "This month"
+msgstr "Цього місяця"
+
+msgid "October"
+msgstr "Жовтень"
+
+msgid "Swedish krona (SEK)"
+msgstr "Шведська крона (SEK)"
+
+msgid "No spending in either period"
+msgstr "В обох періодах витрат не було"
+
+msgid "Jun"
+msgstr "Чер"
+
+msgid "Save expense"
+msgstr "Зберегти витрату"
+
+msgid "Amount (%(currency)s)"
+msgstr "Сума (%(currency)s)"
+
+msgid "add a category"
+msgstr "додати категорію"
+
+msgid "Monthly spending in %(year)s"
+msgstr "Витрати за місяцями у %(year)s році"
+
+msgid "Edit category"
+msgstr "Редагувати категорію"
+
+msgid "YOUR SETUP"
+msgstr "ВАШІ НАЛАШТУВАННЯ"
+
+msgid "Edit income"
+msgstr "Змінити дохід"
+
+msgid "Add category"
+msgstr "Додати категорію"
+
+msgid "Polish złoty (PLN)"
+msgstr "Польський злотий (PLN)"
+
+msgid "British pound (GBP)"
+msgstr "Британський фунт (GBP)"
+
+msgid "Jul"
+msgstr "Лип"
+
+msgid "By category"
+msgstr "За категоріями"
+
+msgid "Account settings"
+msgstr "Налаштування облікового запису"
+
+msgid "Edit"
+msgstr "Редагувати"
+
+msgid "Expense deleted."
+msgstr "Витрату видалено."
+
+msgid "Move expenses and delete category"
+msgstr "Перенести витрати й видалити категорію"
+
+msgid "This month’s goal contributions"
+msgstr "Внески до цілей цього місяця"
+
+msgid "Savings goal updated."
+msgstr "Ціль заощаджень оновлено."

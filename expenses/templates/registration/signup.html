@@ -1,8 +1,9 @@
 {% extends "base.html" %}
-{% block title %}Create account · MoneyMate{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "Create account" %} · MoneyMate{% endblock %}
 {% block content %}
-<section class="auth-page"><div class="form-card auth-card"><span class="brand-mark large-mark">M</span><p class="eyebrow">START WITH THE BASICS</p><h1>Create your account</h1><p class="muted">Your expenses are private to your account.</p>
-  <form method="post" class="app-form">{% csrf_token %}{% for field in form %}<div class="field"><label for="{{ field.id_for_label }}">{% if field.name == "username" %}Username{% elif field.name == "email" %}Email address <span class="optional">optional</span>{% elif field.name == "password1" %}Password{% else %}Confirm password{% endif %}</label>{{ field }}{% if field.help_text %}<small>{{ field.help_text|safe }}</small>{% endif %}{% for error in field.errors %}<span class="field-error">{{ error }}</span>{% endfor %}</div>{% endfor %}{% if form.non_field_errors %}<div class="field-error">{{ form.non_field_errors }}</div>{% endif %}<button class="button button-primary full-button" type="submit">Create account</button></form>
-  <p class="auth-switch">Already have an account? <a href="{% url 'login' %}">Log in</a></p>
+<section class="auth-page"><div class="form-card auth-card"><span class="brand-mark large-mark">M</span><p class="eyebrow">{% trans "START WITH THE BASICS" %}</p><h1>{% trans "Create your account" %}</h1><p class="muted">{% trans "Your expenses are private to your account." %}</p>
+  <form method="post" class="app-form">{% csrf_token %}{% for field in form %}<div class="field"><label for="{{ field.id_for_label }}">{% if field.name == "username" %}{% trans "Username" %}{% elif field.name == "email" %}{% trans "Email address" %} <span class="optional">{% trans "optional" %}</span>{% elif field.name == "currency" %}{% trans "Preferred currency" %}{% elif field.name == "password1" %}{% trans "Password" %}{% else %}{% trans "Confirm password" %}{% endif %}</label>{{ field }}{% if field.help_text %}<small>{{ field.help_text|safe }}</small>{% endif %}{% for error in field.errors %}<span class="field-error">{{ error }}</span>{% endfor %}</div>{% endfor %}{% if form.non_field_errors %}<div class="field-error">{{ form.non_field_errors }}</div>{% endif %}<button class="button button-primary full-button" type="submit">{% trans "Create account" %}</button></form>
+  <p class="auth-switch">{% trans "Already have an account?" %} <a href="{% url 'login' %}">{% trans "Log in" %}</a></p>
 </div></section>
 {% endblock %}

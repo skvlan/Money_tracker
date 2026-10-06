@@ -3,5 +3,8 @@
 __pycache__/
 *.py[cod]
 *.sqlite3
+local-data.json
 .env
 .DS_Store
+*.sqlite3.backup
+staticfiles/

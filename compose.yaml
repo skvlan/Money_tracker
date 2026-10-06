@@ -1,0 +1,40 @@
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-money_tracker}
+      POSTGRES_USER: ${DB_USER:-money_tracker}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-money_tracker_local_only}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-money_tracker} -d ${DB_NAME:-money_tracker}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  web:
+    build: .
+    restart: unless-stopped
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    environment:
+      DJANGO_DEBUG: "true"
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:-django-insecure-local-development-only}
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1
+      DB_ENGINE: postgresql
+      DB_NAME: ${DB_NAME:-money_tracker}
+      DB_USER: ${DB_USER:-money_tracker}
+      DB_PASSWORD: ${DB_PASSWORD:-money_tracker_local_only}
+      DB_HOST: db
+      DB_PORT: "5432"
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres_data:

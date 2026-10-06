@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Reports" %} · MoneyMate{% endblock %}
+{% block content %}
+<section class="welcome-row report-heading">
+  <div><p class="eyebrow">{% trans "YOUR SPENDING, ZOOMED OUT" %}</p><h1>{% trans "Yearly report" %}</h1><p class="muted">{% trans "See how your spending changes through the year." %}</p></div>
+  <form method="get" class="year-picker"><label for="year-select">{% trans "Year" %}</label><select id="year-select" name="year" onchange="this.form.submit()">{% for year in available_years %}<option value="{{ year }}"{% if year == selected_year %} selected{% endif %}>{{ year }}</option>{% endfor %}</select></form>
+</section>
+
+<div class="period-line report-period-line"><h2>{{ current_month|date:"F Y" }}</h2><span class="period-note">{% trans "Current month" %}</span></div>
+<section class="summary-grid report-current-month" aria-label="Current month money summary">
+  <article class="summary-card income-card"><div class="card-label">{% trans "Monthly income" %}</div><div class="card-value">{{ currency_prefix }}{{ current_month_income|floatformat:2 }}{{ currency_suffix }}</div><a class="card-action" href="{% url 'income_update' %}">{% trans "Edit income" %} ↗</a></article>
+  <article class="summary-card"><div class="card-label">{% trans "Spent this month" %}</div><div class="card-value">{{ currency_prefix }}{{ current_month_spent|floatformat:2 }}{{ currency_suffix }}</div><div class="card-caption">{{ current_month|date:"1 F"|lower }} – {% trans "today" %}</div></article>
+  <article class="summary-card"><div class="card-label">{% trans "Set aside for goals" %}</div><div class="card-value">{{ currency_prefix }}{{ current_month_goal_savings|floatformat:2 }}{{ currency_suffix }}</div><div class="card-caption">{% trans "This month’s goal contributions" %}</div></article>
+  <article class="summary-card remaining-card"><div class="card-label">{% trans "Free this month" %}</div><div class="card-value">{{ currency_prefix }}{{ current_month_remaining|floatformat:2 }}{{ currency_suffix }}</div><div class="card-caption">{% trans "Income minus expenses and goal savings" %}</div></article>
+</section>
+
+<section class="panel savings-goals-panel">
+  <div class="panel-heading"><div><p class="eyebrow">{% trans "PLAN AHEAD" %}</p><h2>{% trans "Savings goals" %}</h2></div><a class="button button-secondary" href="{% url 'savings_goal_create' %}">＋ {% trans "Add a goal" %}</a></div>
+  {% if savings_goals %}
+    <div class="savings-goal-list">
+      {% for goal in savings_goals %}
+        <article class="savings-goal">
+          <div class="goal-heading"><h3>{{ goal.name }}</h3><span>{{ currency_prefix }}{{ goal.saved_amount|floatformat:2 }}{{ currency_suffix }} {% trans "of" %} {{ currency_prefix }}{{ goal.target_amount|floatformat:2 }}{{ currency_suffix }}</span></div>
+          <div class="goal-progress" role="progressbar" aria-label="{% trans 'Goal progress' %}: {{ goal.name }}" aria-valuenow="{{ goal.progress|floatformat:0 }}" aria-valuemin="0" aria-valuemax="100"><span style="width: {{ goal.progress|floatformat:0 }}%"></span></div>
+          <div class="goal-footer"><span>{% if goal.amount_left %}{{ currency_prefix }}{{ goal.amount_left|floatformat:2 }}{{ currency_suffix }} {% trans "left" %}{% else %}{% trans "Goal reached" %}{% endif %}</span><div class="goal-actions"><a class="subtle-link" href="{% url 'savings_goal_contribute' goal.pk %}">＋ {% trans "Add savings" %}</a><a class="edit-link" href="{% url 'savings_goal_update' goal.pk %}">{% trans "Edit" %}</a><a class="delete-link" href="{% url 'savings_goal_delete' goal.pk %}">{% trans "Delete" %}</a></div></div>
+        </article>
+      {% endfor %}
+    </div>
+    <p class="goal-note">{% trans "Goal contributions are not expenses, but they are deducted from your free monthly balance." %}</p>
+  {% else %}<div class="empty-state">{% trans "Set a target and track your progress as you add savings." %}</div>{% endif %}
+</section>
+
+<div class="period-line report-period-line"><h2>{{ selected_year }}</h2><span class="period-note">{% trans "Yearly overview" %}</span></div>
+<section class="summary-grid report-summary" aria-label="Yearly spending summary">
+  <article class="summary-card year-card"><div class="card-label">{% trans "Total spent in" %} {{ selected_year }}</div><div class="card-value">{{ currency_prefix }}{{ total|floatformat:2 }}{{ currency_suffix }}</div><div class="card-caption">{% trans "Across all categories" %}</div></article>
+  <article class="summary-card"><div class="card-label">{% trans "Average per active month" %}</div><div class="card-value">{{ currency_prefix }}{{ average|floatformat:2 }}{{ currency_suffix }}</div><div class="card-caption">{% trans "Months with expenses:" %} {{ active_month_count }}</div></article>
+</section>
+
+<section class="report-grid">
+  <article class="panel chart-panel">
+    <div class="panel-heading"><div><p class="eyebrow">{% trans "MONTH BY MONTH" %}</p><h2>{% trans "Spending trend" %}</h2></div></div>
+    {% if total %}
+      <div class="chart-scroll"><div class="bar-chart" role="img" aria-label="{% blocktrans with year=selected_year %}Monthly spending in {{ year }}{% endblocktrans %}">
+        {% for month in monthly_totals %}<div class="chart-column" title="{{ month.name }}: {{ currency_prefix }}{{ month.total|floatformat:2 }}{{ currency_suffix }}"><div class="bar-value">{% if month.total %}{{ currency_prefix }}{{ month.total|floatformat:0 }}{{ currency_suffix }}{% endif %}</div><div class="bar-track"><span class="bar-fill" style="height: {{ month.height|floatformat:0 }}%"></span></div><span class="bar-month">{{ month.short }}</span></div>{% endfor %}
+      </div></div>
+    {% else %}<div class="empty-state">{% blocktrans with year=selected_year %}No expenses recorded in {{ year }} yet.{% endblocktrans %}</div>{% endif %}
+  </article>
+
+  <article class="panel report-categories">
+    <div class="panel-heading"><div><p class="eyebrow">{% trans "FULL YEAR" %}</p><h2>{% trans "By category" %}</h2></div></div>
+    {% if category_totals %}<div class="category-list">{% for category in category_totals %}<div class="category-row"><div class="category-top"><span class="category-name"><span class="category-emoji">{{ category.emoji }}</span>{{ category.name }}</span><span class="category-amount">{{ currency_prefix }}{{ category.spent|floatformat:2 }}{{ currency_suffix }}</span></div><div class="progress-track"><span class="progress-fill" style="width: {{ category.share|floatformat:0 }}%"></span></div><div class="category-share">{{ category.share|floatformat:0 }}% {% trans "of yearly spending" %}</div></div>{% endfor %}</div>
+    {% else %}<div class="empty-state">{% trans "Add expenses to see your category breakdown." %}</div>{% endif %}
+  </article>
+</section>
+{% endblock %}

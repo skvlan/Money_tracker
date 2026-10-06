@@ -1,0 +1,632 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\nLanguage: de\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Create a savings goal"
+msgstr "Sparziel erstellen"
+
+msgid "same as this time last month"
+msgstr "genauso viel wie zum gleichen Zeitpunkt im letzten Monat"
+
+msgid "SPENDING BREAKDOWN"
+msgstr "AUSGABENÜBERSICHT"
+
+msgid "Category deleted. Its expenses were kept in the replacement category."
+msgstr "Kategorie gelöscht. Die Ausgaben wurden der Ersatzkategorie zugeordnet."
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Spending trend"
+msgstr "Ausgabenentwicklung"
+
+msgid "See how your spending changes through the year."
+msgstr "Sieh dir an, wie sich deine Ausgaben im Jahresverlauf verändern."
+
+msgid "This category has no expenses and can be safely removed."
+msgstr "Diese Kategorie enthält keine Ausgaben und kann bedenkenlos gelöscht werden."
+
+msgid "Add expenses to see your category breakdown."
+msgstr "Füge Ausgaben hinzu, um die Aufschlüsselung nach Kategorien zu sehen."
+
+msgid "Dec"
+msgstr "Dez"
+
+msgid "December"
+msgstr "Dezember"
+
+msgid "Savings goals"
+msgstr "Sparziele"
+
+msgid "Your expenses are private to your account."
+msgstr "Deine Ausgaben sind nur in deinem Konto sichtbar."
+
+msgid "Target amount (%(currency)s)"
+msgstr "Zielbetrag (%(currency)s)"
+
+msgid "left"
+msgstr "übrig"
+
+msgid "Overview"
+msgstr "Übersicht"
+
+msgid "ACCOUNT PREFERENCE"
+msgstr "KONTOEINSTELLUNGEN"
+
+msgid "PLAN AHEAD"
+msgstr "VORAUSPLANEN"
+
+msgid "Expense updated."
+msgstr "Ausgabe aktualisiert."
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "This amount will be set aside from your free monthly balance."
+msgstr "Dieser Betrag wird vom frei verfügbaren Monatsbetrag abgezogen."
+
+msgid "LATEST ACTIVITY"
+msgstr "LETZTE AKTIVITÄTEN"
+
+msgid "Spent this month"
+msgstr "Diesen Monat ausgegeben"
+
+msgid "Goal progress"
+msgstr "Zielfortschritt"
+
+msgid "This month’s contributions:"
+msgstr "Einzahlungen in diesem Monat:"
+
+msgid "Manage"
+msgstr "Verwalten"
+
+msgid "Spent in"
+msgstr "Ausgegeben in"
+
+msgid "of yearly spending"
+msgstr "der Jahresausgaben"
+
+msgid "March"
+msgstr "März"
+
+msgid "Your money, with a clearer picture."
+msgstr "Deine Finanzen klar im Blick."
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "Save income"
+msgstr "Einkommen speichern"
+
+msgid "Choose a replacement category"
+msgstr "Ersatzkategorie auswählen"
+
+msgid "August"
+msgstr "August"
+
+msgid "Yesterday"
+msgstr "Gestern"
+
+msgid "Mar"
+msgstr "Mär"
+
+msgid "Back to categories"
+msgstr "Zurück zu den Kategorien"
+
+msgid "Set aside for goals"
+msgstr "Für Ziele zurückgelegt"
+
+msgid "Months with expenses:"
+msgstr "Monate mit Ausgaben:"
+
+msgid "Save changes"
+msgstr "Änderungen speichern"
+
+msgid "Create an account"
+msgstr "Ein Konto erstellen"
+
+msgid "Yearly overview"
+msgstr "Jahresübersicht"
+
+msgid "This amount will return to your free monthly balance."
+msgstr "Dieser Betrag wird wieder zum frei verfügbaren Monatsbetrag hinzugefügt."
+
+msgid "Create goal"
+msgstr "Ziel erstellen"
+
+msgid "Today"
+msgstr "Heute"
+
+msgid "What did you buy?"
+msgstr "Was hast du gekauft?"
+
+msgid "Email address"
+msgstr "E-Mail-Adresse"
+
+msgid "Set the amount to calculate what remains after your expenses."
+msgstr "Gib dein Einkommen an, um den Betrag nach den Ausgaben zu berechnen."
+
+msgid "Goal contributions are not expenses, but they are deducted from your free monthly balance."
+msgstr "Zieleinzahlungen sind keine Ausgaben, werden aber vom frei verfügbaren Monatsbetrag abgezogen."
+
+msgid "Add an expense"
+msgstr "Ausgabe hinzufügen"
+
+msgid "Category deleted."
+msgstr "Kategorie gelöscht."
+
+msgid "Monthly income (%(currency)s)"
+msgstr "Monatseinkommen (%(currency)s)"
+
+msgid "Changing currency does not convert amounts already entered. It only changes how amounts are labelled. Use one currency consistently for an account."
+msgstr "Ein Währungswechsel rechnet vorhandene Beträge nicht um, sondern ändert nur ihre Kennzeichnung. Verwende für ein Konto eine Währung."
+
+msgid "Expenses in this category:"
+msgstr "Ausgaben in dieser Kategorie:"
+
+msgid "of spending so far"
+msgstr "der bisherigen Ausgaben"
+
+msgid "Add a category"
+msgstr "Kategorie hinzufügen"
+
+msgid "less than this time last month"
+msgstr "weniger als zum gleichen Zeitpunkt im letzten Monat"
+
+msgid "Goal savings deducted:"
+msgstr "Für Ziele zurückgelegt:"
+
+msgid "Create your account"
+msgstr "Erstelle dein Konto"
+
+msgid "Add your first expense to see a breakdown here."
+msgstr "Füge deine erste Ausgabe hinzu, um hier eine Aufschlüsselung zu sehen."
+
+msgid "Choose something to save for and set your target amount."
+msgstr "Wähle ein Sparziel und lege den Zielbetrag fest."
+
+msgid "Euro (EUR)"
+msgstr "Euro (EUR)"
+
+msgid "Main navigation"
+msgstr "Hauptnavigation"
+
+msgid "Choose another category to keep them in your history."
+msgstr "Wähle eine andere Kategorie, um sie im Verlauf zu behalten."
+
+msgid "Goal reached"
+msgstr "Ziel erreicht"
+
+msgid "Set a target and track your progress as you add savings."
+msgstr "Lege ein Ziel fest und verfolge deinen Fortschritt beim Sparen."
+
+msgid "YOUR FINANCES, IN ONE PLACE"
+msgstr "DEINE FINANZEN AN EINEM ORT"
+
+msgid "May"
+msgstr "Mai"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Edit savings goal"
+msgstr "Sparziel bearbeiten"
+
+msgid "Amount"
+msgstr "Betrag"
+
+msgid "more than this time last month"
+msgstr "mehr als zum gleichen Zeitpunkt im letzten Monat"
+
+msgid "today"
+msgstr "heute"
+
+msgid "Purchase date"
+msgstr "Kaufdatum"
+
+msgid "Average per active month"
+msgstr "Durchschnitt pro aktivem Monat"
+
+msgid "No expenses yet."
+msgstr "Noch keine Ausgaben."
+
+msgid "First,"
+msgstr "Zuerst"
+
+msgid "No spending at this time last month"
+msgstr "Zum gleichen Zeitpunkt im letzten Monat gab es keine Ausgaben"
+
+msgid "Total spent in"
+msgstr "Insgesamt ausgegeben in"
+
+msgid "Category updated."
+msgstr "Kategorie aktualisiert."
+
+msgid "Monthly income"
+msgstr "Monatseinkommen"
+
+msgid "new this month"
+msgstr "diesen Monat neu"
+
+msgid "Delete “%(name)s”?"
+msgstr "„%(name)s“ löschen?"
+
+msgid "Australian dollar (AUD)"
+msgstr "Australischer Dollar (AUD)"
+
+msgid "Add another category first so these expenses can be kept."
+msgstr "Füge zuerst eine andere Kategorie hinzu, damit diese Ausgaben erhalten bleiben."
+
+msgid "Reports"
+msgstr "Berichte"
+
+msgid "MONTH BY MONTH"
+msgstr "MONAT FÜR MONAT"
+
+msgid "MAKE IT YOURS"
+msgstr "PASSE ES AN"
+
+msgid "Password"
+msgstr "Passwort"
+
+msgid "November"
+msgstr "November"
+
+msgid "June"
+msgstr "Juni"
+
+msgid "Add savings to %(goal)s"
+msgstr "Ersparnisse zu „%(goal)s“ hinzufügen"
+
+msgid "Feb"
+msgstr "Feb"
+
+msgid "Free this month"
+msgstr "Diesen Monat verfügbar"
+
+msgid "Confirm password"
+msgstr "Passwort bestätigen"
+
+msgid "Category"
+msgstr "Kategorie"
+
+msgid "Delete category"
+msgstr "Kategorie löschen"
+
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+msgid "Add"
+msgstr "Hinzufügen"
+
+msgid "optional"
+msgstr "optional"
+
+msgid "Create account"
+msgstr "Konto erstellen"
+
+msgid "Expenses"
+msgstr "Ausgaben"
+
+msgid "Across all categories"
+msgstr "Über alle Kategorien"
+
+msgid "Yearly report"
+msgstr "Jahresbericht"
+
+msgid "Canadian dollar (CAD)"
+msgstr "Kanadischer Dollar (CAD)"
+
+msgid "Recorded savings:"
+msgstr "Erfasste Ersparnisse:"
+
+msgid "Purchase"
+msgstr "Einkauf"
+
+msgid "Delete goal and contributions"
+msgstr "Ziel und Einzahlungen löschen"
+
+msgid "Log out"
+msgstr "Abmelden"
+
+msgid "No expenses recorded in %(year)s yet."
+msgstr "Für %(year)s sind noch keine Ausgaben erfasst."
+
+msgid "No categories yet. Add one to start organizing expenses."
+msgstr "Noch keine Kategorien. Füge eine hinzu, um Ausgaben zu ordnen."
+
+msgid "Log in to see your expenses."
+msgstr "Melde dich an, um deine Ausgaben zu sehen."
+
+msgid "Jan"
+msgstr "Jan"
+
+msgid "Back to reports"
+msgstr "Zurück zu den Berichten"
+
+msgid "Delete expense"
+msgstr "Ausgabe löschen"
+
+msgid "Recent expenses"
+msgstr "Letzte Ausgaben"
+
+msgid "Already have an account?"
+msgstr "Hast du bereits ein Konto?"
+
+msgid "YOUR SPENDING, ZOOMED OUT"
+msgstr "AUSGABEN IM ÜBERBLICK"
+
+msgid "Indian rupee (INR)"
+msgstr "Indische Rupie (INR)"
+
+msgid "A clear view of where your money goes."
+msgstr "Ein klarer Überblick darüber, wohin dein Geld fließt."
+
+msgid "Savings added to %(goal)s."
+msgstr "Ersparnisse zu „%(goal)s“ hinzugefügt."
+
+msgid "Same as this time last month"
+msgstr "Genauso viel wie zum gleichen Zeitpunkt im letzten Monat"
+
+msgid "Add a goal"
+msgstr "Ziel hinzufügen"
+
+msgid "of"
+msgstr "von"
+
+msgid "September"
+msgstr "September"
+
+msgid "Preferred currency"
+msgstr "Bevorzugte Währung"
+
+msgid "FULL YEAR"
+msgstr "GESAMTES JAHR"
+
+msgid "April"
+msgstr "April"
+
+msgid "Income minus expenses and goal savings"
+msgstr "Einkommen abzüglich Ausgaben und Zielersparnisse"
+
+msgid "Add the amount, a short description, and a category."
+msgstr "Gib den Betrag, eine kurze Beschreibung und eine Kategorie an."
+
+msgid "HISTORY"
+msgstr "VERLAUF"
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "Welcome back"
+msgstr "Willkommen zurück"
+
+msgid "Edit expense"
+msgstr "Ausgabe bearbeiten"
+
+msgid "Hi, %(username)s 👋"
+msgstr "Hallo, %(username)s 👋"
+
+msgid "Choose a name and icon that make sense to you."
+msgstr "Wähle einen passenden Namen und ein Symbol."
+
+msgid "Target amount"
+msgstr "Zielbetrag"
+
+msgid "Amount to add (%(currency)s)"
+msgstr "Einzahlungsbetrag (%(currency)s)"
+
+msgid "CONFIRMATION"
+msgstr "BESTÄTIGUNG"
+
+msgid "Save category"
+msgstr "Kategorie speichern"
+
+msgid "Monthly income saved."
+msgstr "Monatseinkommen gespeichert."
+
+msgid "Your purchases, newest first."
+msgstr "Deine Einkäufe, neueste zuerst."
+
+msgid "January"
+msgstr "Januar"
+
+msgid "Current month"
+msgstr "Aktueller Monat"
+
+msgid "PERSONAL FINANCE"
+msgstr "PERSÖNLICHE FINANZEN"
+
+msgid "Move its expenses to"
+msgstr "Ausgaben verschieben nach"
+
+msgid "Sep"
+msgstr "Sep"
+
+msgid "Add savings"
+msgstr "Ersparnisse hinzufügen"
+
+msgid "New here?"
+msgstr "Neu hier?"
+
+msgid "START WITH THE BASICS"
+msgstr "BEGINNE MIT DEN GRUNDLAGEN"
+
+msgid "Delete this expense?"
+msgstr "Diese Ausgabe löschen?"
+
+msgid "Apr"
+msgstr "Apr"
+
+msgid "All expenses"
+msgstr "Alle Ausgaben"
+
+msgid "Set your income"
+msgstr "Einkommen festlegen"
+
+msgid "Icon"
+msgstr "Symbol"
+
+msgid "Aug"
+msgstr "Aug"
+
+msgid "Update the goal name or target. Recorded contributions will stay unchanged."
+msgstr "Ändere den Namen oder Zielbetrag. Erfasste Einzahlungen bleiben erhalten."
+
+msgid "Category added."
+msgstr "Kategorie hinzugefügt."
+
+msgid "Log in"
+msgstr "Anmelden"
+
+msgid "Savings goal created."
+msgstr "Sparziel erstellt."
+
+msgid "Organize expenses with names and icons that work for you."
+msgstr "Ordne Ausgaben mit passenden Namen und Symbolen."
+
+msgid "All expenses →"
+msgstr "Alle Ausgaben →"
+
+msgid "No expenses yet. Add your first purchase."
+msgstr "Noch keine Ausgaben. Füge deinen ersten Einkauf hinzu."
+
+msgid "February"
+msgstr "Februar"
+
+msgid "We couldn't log you in. Check your username and password."
+msgstr "Anmeldung nicht möglich. Überprüfe Benutzername und Passwort."
+
+msgid "Year"
+msgstr "Jahr"
+
+msgid "Add expense"
+msgstr "Ausgabe hinzufügen"
+
+msgid "US dollar (USD)"
+msgstr "US-Dollar (USD)"
+
+msgid "Year to date · View report"
+msgstr "Seit Jahresbeginn · Bericht ansehen"
+
+msgid "New category"
+msgstr "Neue Kategorie"
+
+msgid "Goal name"
+msgstr "Zielname"
+
+msgid "Expenses:"
+msgstr "Ausgaben:"
+
+msgid "Username"
+msgstr "Benutzername"
+
+msgid "TRACK A PURCHASE"
+msgstr "AUSGABE ERFASSEN"
+
+msgid "Save settings"
+msgstr "Einstellungen speichern"
+
+msgid "no spending"
+msgstr "keine Ausgaben"
+
+msgid "Savings goal and its recorded contributions were deleted."
+msgstr "Sparziel und erfasste Einzahlungen gelöscht."
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Oct"
+msgstr "Okt"
+
+msgid "Add your first purchase."
+msgstr "Füge deinen ersten Einkauf hinzu."
+
+msgid "Categories"
+msgstr "Kategorien"
+
+msgid "July"
+msgstr "Juli"
+
+msgid "Expense added."
+msgstr "Ausgabe hinzugefügt."
+
+msgid "Back to overview"
+msgstr "Zurück zur Übersicht"
+
+msgid "Choose your preferred currency and language."
+msgstr "Wähle deine bevorzugte Währung und Sprache."
+
+msgid "Japanese yen (JPY)"
+msgstr "Japanischer Yen (JPY)"
+
+msgid "Swiss franc (CHF)"
+msgstr "Schweizer Franken (CHF)"
+
+msgid "This month"
+msgstr "Diesen Monat"
+
+msgid "October"
+msgstr "Oktober"
+
+msgid "Swedish krona (SEK)"
+msgstr "Schwedische Krone (SEK)"
+
+msgid "No spending in either period"
+msgstr "In beiden Zeiträumen gab es keine Ausgaben"
+
+msgid "Jun"
+msgstr "Jun"
+
+msgid "Save expense"
+msgstr "Ausgabe speichern"
+
+msgid "Amount (%(currency)s)"
+msgstr "Betrag (%(currency)s)"
+
+msgid "add a category"
+msgstr "Kategorie hinzufügen"
+
+msgid "Monthly spending in %(year)s"
+msgstr "Monatliche Ausgaben im Jahr %(year)s"
+
+msgid "Edit category"
+msgstr "Kategorie bearbeiten"
+
+msgid "YOUR SETUP"
+msgstr "DEINE EINSTELLUNGEN"
+
+msgid "Edit income"
+msgstr "Einkommen bearbeiten"
+
+msgid "Add category"
+msgstr "Kategorie hinzufügen"
+
+msgid "Polish złoty (PLN)"
+msgstr "Polnischer Złoty (PLN)"
+
+msgid "British pound (GBP)"
+msgstr "Britisches Pfund (GBP)"
+
+msgid "Jul"
+msgstr "Jul"
+
+msgid "By category"
+msgstr "Nach Kategorie"
+
+msgid "Account settings"
+msgstr "Kontoeinstellungen"
+
+msgid "Edit"
+msgstr "Bearbeiten"
+
+msgid "Expense deleted."
+msgstr "Ausgabe gelöscht."
+
+msgid "Move expenses and delete category"
+msgstr "Ausgaben verschieben und Kategorie löschen"
+
+msgid "This month’s goal contributions"
+msgstr "Einzahlungen für Ziele in diesem Monat"
+
+msgid "Savings goal updated."
+msgstr "Sparziel aktualisiert."

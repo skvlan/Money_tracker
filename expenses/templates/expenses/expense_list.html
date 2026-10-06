@@ -1,9 +1,16 @@
 {% extends "base.html" %}
-{% block title %}All expenses · MoneyMate{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "All expenses" %} · MoneyMate{% endblock %}
 {% block content %}
-<section class="welcome-row"><div><p class="eyebrow">HISTORY</p><h1>All expenses</h1><p class="muted">Your purchases, newest first.</p></div><a class="button button-primary" href="{% url 'expense_create' %}">＋ Add expense</a></section>
+<section class="welcome-row"><div><p class="eyebrow">{% trans "HISTORY" %}</p><h1>{% trans "All expenses" %}</h1><p class="muted">{% trans "Your purchases, newest first." %}</p></div><a class="button button-primary" href="{% url 'expense_create' %}">＋ {% trans "Add expense" %}</a></section>
 <section class="panel table-panel">
-  {% if expenses %}<div class="table-wrap"><table><thead><tr><th>Purchase</th><th>Category</th><th>Date</th><th class="align-right">Amount</th><th></th></tr></thead><tbody>{% for expense in expenses %}<tr><td class="table-description">{{ expense.description }}</td><td><span class="table-category">{{ expense.category.emoji }} {{ expense.category.name }}</span></td><td>{{ expense.date|date:"j M Y" }}</td><td class="align-right">−€{{ expense.amount|floatformat:2 }}</td><td class="align-right"><a class="delete-link" href="{% url 'expense_delete' expense.pk %}" aria-label="Delete {{ expense.description }}">Delete</a></td></tr>{% endfor %}</tbody></table></div>
-  {% else %}<div class="empty-state">No expenses yet. Add your first purchase.</div>{% endif %}
+  {% if expenses %}<div class="table-wrap"><table><thead><tr><th>{% trans "Purchase" %}</th><th>{% trans "Category" %}</th><th class="align-right">{% trans "Amount" %}</th><th></th></tr></thead><tbody>
+    {% regroup expenses by date as expense_days %}
+    {% for day in expense_days %}
+      <tr class="expense-table-day"><th colspan="4">{% if day.grouper == today %}{% trans "Today" %}{% elif day.grouper == yesterday %}{% trans "Yesterday" %}{% else %}{{ day.grouper|date:"l, j F Y" }}{% endif %}</th></tr>
+      {% for expense in day.list %}<tr><td class="table-description">{{ expense.description }}</td><td><span class="table-category">{{ expense.category.emoji }} {{ expense.category.name }}</span></td><td class="align-right">−{{ currency_prefix }}{{ expense.amount|floatformat:2 }}{{ currency_suffix }}</td><td class="align-right"><span class="table-actions"><a class="edit-link" href="{% url 'expense_update' expense.pk %}">{% trans "Edit" %}</a><a class="delete-link" href="{% url 'expense_delete' expense.pk %}" aria-label="Delete {{ expense.description }}">{% trans "Delete" %}</a></span></td></tr>{% endfor %}
+    {% endfor %}
+  </tbody></table></div>
+  {% else %}<div class="empty-state">{% trans "No expenses yet. Add your first purchase." %}</div>{% endif %}
 </section>
 {% endblock %}
